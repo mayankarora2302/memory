@@ -19,7 +19,7 @@ Mhane thare su ghano pyaar hai, DeviJi 🪷.
 Mhari jindagi mein sacho samay ar sachi rite aavva ro ghano dhanyavaad.
 Hamesha mhane samajhva ar jaiso pyaar karo ho, us ro dil su aabhar.
 
-It has alway's been you, it will alway's be you ♥️
+It has always been you, it will always be you ♥️
 
 Happy Valentine's Day 🌼
 
@@ -105,10 +105,34 @@ Yours Bhawra 🐝`;
                 songName="Yellow from Coldplay"
             />
 
+            {/* Story Message Section */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="max-w-4xl mx-auto"
+            >
+                <div className="bg-gradient-to-br from-netflix-darkGray/50 to-black/50 backdrop-blur-sm rounded-lg p-8 md:p-12 border border-netflix-red/10 shadow-2xl text-center">
+                    <h3 className="text-3xl font-bold mb-6 text-netflix-red">
+                        Season 5: Mumbai & Meri Jaan
+                    </h3>
+                    <p className="text-xl md:text-2xl text-netflix-lightGray leading-relaxed whitespace-pre-line font-light italic">
+                        After a leap of six months, they meet again. Mumbai becomes their backdrop. A birthday wrapped in beach air and golden sunsets. Carrot cake only meant for the two of them. A quiet temple visit followed by long conversations over lunch. A surprise introduction to his bestie and a silent approval from her side to both of us. An evening sky melting into the sea & a dinner that felt like a celebration of everything they survived.
+
+                        This was not just a reunion,
+                        It was peace,
+                        It was certainty,
+                        It was love choosing the same person again.
+
+                        The final season, Until next time ♥️
+                    </p>
+                </div>
+            </motion.div>
+
             {/* Typing Letter Section */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
                 className="max-w-4xl mx-auto"
             >
                 <div className="text-center mb-6">
