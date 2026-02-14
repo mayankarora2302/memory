@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
+import FlowerCatchGame from '../FlowerCatchGame';
 
 export default function Episode2ProposeDay() {
     // TODO: PERSONALIZE - Add your own proposal message/monologue
@@ -37,6 +38,15 @@ export default function Episode2ProposeDay() {
                 >
                     {proposalMonologue}
                 </motion.div>
+            </motion.div>
+
+            {/* Flower Catching Game */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+            >
+                <FlowerCatchGame />
             </motion.div>
         </div>
     );
