@@ -71,11 +71,11 @@ export const episodes: Episode[] = [
     {
         id: 5,
         title: "Season 5: Mumbai & Meri Jaan",
-        subtitle: "After a leap of six months, they meet again. Mumbai becomes their backdrop",
+        subtitle: "Mumbai & Meri Jaan",
         theme: "Emotional, deep, sincere",
         releaseDate: new Date(2026, 1, 11),
         coverImage: '/assets/images/five.JPG',
-        description: "After a leap of six months, they meet again. Mumbai becomes their backdrop",
+        description: "Mumbai & Meri Jaan",
         duration: "14 min",
         color: "#4A5568",
         soundtrack: '/assets/audio/I_love_you__Full_song__Bodyguard_feat._Salman_khan,_Kareena_Kapoor(256k).mp3',
