@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
+import Quiz from '../Quiz';
 
 export default function Episode4TeddyDay() {
     // TODO: PERSONALIZE - Add your cozy memories
@@ -10,6 +11,59 @@ export default function Episode4TeddyDay() {
     The next morning, waterfalls rushed beside their train back to Mumbai, carrying memories strong enough to last six months.
 
     Season 4 is where love bloomed fully and learned how to hold on for what's coming next.`;
+
+    const quizQuestions = [
+        {
+            question: "What was the name of the bouquet he got her in Lonavla?",
+            options: ["Sunset Bliss", "Twilight", "Lavender Dream", "Monsoon Magic"],
+            correctAnswer: 1
+        },
+        {
+            question: "Which color combination best describes the Twilight bouquet?",
+            options: ["Red and white", "Pink and peach", "Purple, orange and yellow", "Blue and white"],
+            correctAnswer: 2
+        },
+        {
+            question: "Where did they stay during their Lonavla trip?",
+            options: ["Aria", "Taj Lonavla", "Zostel", "Radisson"],
+            correctAnswer: 2
+        },
+        {
+            question: "Which month anniversary was it?",
+            options: ["No anniversary", "1st month anniversary", "2nd month anniversary", "3rd month anniversary"],
+            correctAnswer: 3
+        },
+        {
+            question: "What type of dinner did they have on the rainy night?",
+            options: ["Italian fine dining", "Barbeque dinner", "Street food", "Buffet breakfast"],
+            correctAnswer: 1
+        },
+        {
+            question: "What special moment happened during dinner?",
+            options: ["First hug", "First long drive", "First dance", "First gift exchange"],
+            correctAnswer: 2
+        },
+        {
+            question: "What was the song of the night?",
+            options: ["Tum Mile", "Jaadu Hai Nasha Hai", "Raataan Lambiyan", "Kesariya"],
+            correctAnswer: 1
+        },
+        {
+            question: "Where did they have pizza the next day?",
+            options: ["German Bakery", "Rama Krishna", "Fiori Lonavla", "Cafe 24"],
+            correctAnswer: 2
+        },
+        {
+            question: "Which train did they take from Lonavla to Mumbai?",
+            options: ["Deccan Express", "Rajdhani", "Vistadome train", "Intercity Express"],
+            correctAnswer: 2
+        },
+        {
+            question: "What beautiful sight followed them on their train journey back?",
+            options: ["Snow covered hills", "Desert landscapes", "Waterfalls", "City skyline"],
+            correctAnswer: 2
+        }
+    ];
 
     return (
         <div className="space-y-12">
@@ -53,6 +107,16 @@ export default function Episode4TeddyDay() {
                     ))}
                 </div>
             </div>
+
+            {/* Quiz Section */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="max-w-4xl mx-auto"
+            >
+                <Quiz title="Lonavla Quiz ⛰️" questions={quizQuestions} />
+            </motion.div>
         </div>
     );
 }

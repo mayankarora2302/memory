@@ -10,13 +10,13 @@ export default function LoginPage() {
 
     const profiles = [
         {
-            name: 'The One Who Loves',
-            avatar: '💝',
+            name: 'Phool',
+            avatar: '🌻',
             color: '#E50914',
         },
         {
-            name: 'The One Who Is Loved',
-            avatar: '💖',
+            name: 'Bhawra',
+            avatar: '🐝',
             color: '#FF1744',
         },
     ];
