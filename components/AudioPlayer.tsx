@@ -119,17 +119,12 @@ export default function AudioPlayer({ audioSrc, episodeTitle, songName }: AudioP
         }
     };
 
-    if (!audioSrc || isError) {
-        return (
-            <div className="bg-netflix-darkGray rounded-lg p-6 text-center border border-netflix-red/20">
-                <p className="text-netflix-lightGray">
-                    {isError ? "🎵 Soundtrack is coming soon!" : "🎵 Audio soundtrack will be available soon"}
-                </p>
-                <p className="text-sm text-gray-500 mt-2 italic">
-                    {isError ? "The music for this episode is still in production." : "Add audio files to public/assets/audio/"}
-                </p>
-            </div>
-        );
+    if (!audioSrc) {
+        return null;
+    }
+
+    if (isError) {
+        return null;
     }
 
     return (
