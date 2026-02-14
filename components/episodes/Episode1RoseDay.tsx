@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
 import Quiz from '../Quiz';
+import AudioPlayer from '../AudioPlayer';
 
 export default function Episode1RoseDay() {
     // TODO: PERSONALIZE - Add your own love message
@@ -90,6 +91,13 @@ export default function Episode1RoseDay() {
         <div className="space-y-12">
             {/* Video Section */}
             <VideoPlayer src="/assets/videos/one.mp4" />
+
+            {/* Audio Player */}
+            <AudioPlayer
+                audioSrc="/assets/audio/Tumhi Dekho Naa (PenduJatt.Com.Se).mp3"
+                episodeTitle="Season 1: Love By Chance"
+                songName="Rishabh's Sitar - Tumhi Dekhona"
+            />
 
             {/* Intro Section */}
             <motion.div

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
 import Quiz from '../Quiz';
+import AudioPlayer from '../AudioPlayer';
 
 export default function Episode3ChocolateDay() {
     // TODO: PERSONALIZE - Add your sweet memories
@@ -74,6 +75,13 @@ export default function Episode3ChocolateDay() {
         <div className="space-y-12">
             {/* Video Section */}
             <VideoPlayer src="/assets/videos/three.mp4" />
+
+            {/* Audio Player */}
+            <AudioPlayer
+                audioSrc="/assets/audio/Sham (PenduJatt.Com.Se).mp3"
+                episodeTitle="Season 3: The Nashik Date"
+                songName="Sham from Aisha"
+            />
 
             {/* Chocolate Theme Header */}
             <motion.div

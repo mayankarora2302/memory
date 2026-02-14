@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
 import Quiz from '../Quiz';
+import AudioPlayer from '../AudioPlayer';
 
 export default function Episode4TeddyDay() {
     // TODO: PERSONALIZE - Add your cozy memories
@@ -69,6 +70,13 @@ export default function Episode4TeddyDay() {
         <div className="space-y-12">
             {/* Video Section */}
             <VideoPlayer src="/assets/videos/four.mp4" />
+
+            {/* Audio Player */}
+            <AudioPlayer
+                audioSrc="/assets/audio/Jaadu Hai Nasha Jism 128 Kbps.mp3"
+                episodeTitle="Season 4: Lonavala Days"
+                songName="Jaadu Hai Nasha Hai"
+            />
 
             {/* Teddy Theme Header */}
             <motion.div

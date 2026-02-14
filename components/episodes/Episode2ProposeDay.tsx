@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
 import FlowerCatchGame from '../FlowerCatchGame';
+import AudioPlayer from '../AudioPlayer';
 
 export default function Episode2ProposeDay() {
     // TODO: PERSONALIZE - Add your own proposal message/monologue
@@ -16,6 +17,13 @@ export default function Episode2ProposeDay() {
         <div className="space-y-12">
             {/* Video Section */}
             <VideoPlayer src="/assets/videos/two.mp4" />
+
+            {/* Audio Player */}
+            <AudioPlayer
+                audioSrc="/assets/audio/Saathiya Sonu Nigam 128 Kbps.mp3"
+                episodeTitle="Season 2: The Bhawra Story"
+                songName="Saathiya Title Song"
+            />
 
             {/* Cinematic Letter */}
             <motion.div

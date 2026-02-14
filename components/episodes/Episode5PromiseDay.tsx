@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import VideoPlayer from '../VideoPlayer';
 import TypingLetter from '../TypingLetter';
 import Quiz from '../Quiz';
+import AudioPlayer from '../AudioPlayer';
 
 export default function Episode5PromiseDay() {
     const letterContent = `Hello Phool 🌼,
@@ -96,6 +97,13 @@ Yours Bhawra 🐝`;
         <div className="space-y-12">
             {/* Video Section */}
             <VideoPlayer src="/assets/videos/five.mp4" />
+
+            {/* Audio Player */}
+            <AudioPlayer
+                audioSrc="/assets/audio/Cold_Play_-_Yellow_3_(mp3.pm).mp3"
+                episodeTitle="Season 5: Mumbai & Meri Jaan"
+                songName="Yellow from Coldplay"
+            />
 
             {/* Typing Letter Section */}
             <motion.div
