@@ -132,7 +132,7 @@ export default function FlowerCatchGame() {
                             {flowers.map((flower) => (
                                 <motion.button
                                     key={flower.id}
-                                    initial={{ y: -60, x: `${flower.x}%` }}
+                                    initial={{ y: -60 }}
                                     animate={{ y: 550 }}
                                     exit={{ opacity: 0, scale: 0.5 }}
                                     transition={{
@@ -144,7 +144,7 @@ export default function FlowerCatchGame() {
                                     onClick={() => catchFlower(flower)}
                                     className="absolute text-5xl md:text-6xl cursor-pointer hover:scale-125 transition-transform z-0"
                                     style={{
-                                        left: 0,
+                                        left: `${flower.x}%`,
                                         transformOrigin: 'center',
                                     }}
                                     whileHover={{ scale: 1.3, rotate: 15 }}
