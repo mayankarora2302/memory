@@ -9,7 +9,7 @@ interface PasswordModalProps {
     profileName: string;
 }
 
-const CORRECT_PASSWORD = 'BeeMyHoney';
+const CORRECT_PASSWORD = 'BeeMyyHoneyy';
 
 export default function PasswordModal({ onClose, profileName }: PasswordModalProps) {
     const [password, setPassword] = useState('');
